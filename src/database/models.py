@@ -12,5 +12,5 @@ class Contact(Base):
     second_name = Column(String, nullable=False)
     email = Column(String, nullable=False)
     phone = Column(String, nullable=False)
-    birthaday = Column(Date, nullable=False)
+    birthday = Column(Date, nullable=False)
     description = Column(String, nullable=True)
