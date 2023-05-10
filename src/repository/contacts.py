@@ -35,7 +35,7 @@ async def update_contact(contact_id: int, body: ContactModel, db: Session) -> Co
         contact.second_name = body.second_name
         contact.email = body.email
         contact.phone = body.phone
-        contact.birthaday = body.birthaday
+        contact.birthday = body.birthday
         contact.description = body.description
         db.commit()
     return contact
