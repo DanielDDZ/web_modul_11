@@ -7,7 +7,7 @@ class ContactModel(BaseModel):
     second_name: str = Field(min_length=3, strict=True, max_length=50)
     email: EmailStr
     phone: str = Field(min_length=10, strict=True, max_length=13)
-    birthaday: date
+    birthday: date
     description: str = Field(min_length=3, strict=True, max_length=250)
 
 
@@ -17,7 +17,7 @@ class ContactResponse(ContactModel):
     second_name: str = "Example"
     email: EmailStr = "example@gmail.com"
     phone: str = "0000000000"
-    birthaday: date = date(year=1995, month=8, day=19)
+    birthday: date = date(year=1995, month=8, day=19)
     description: str = "Created first contact for test"
 
     class Config:
