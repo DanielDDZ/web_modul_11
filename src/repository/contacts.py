@@ -20,7 +20,7 @@ async def create_contact(body: ContactModel, db: Session) -> Contact:
                 second_name=body.second_name,
                 email=body.email,
                 phone=body.phone,
-                birthaday=body.birthaday,
+                birthday=body.birthday,
                 description=body.description)
     db.add(contact)
     db.commit()
